@@ -1,0 +1,23 @@
+# === Vanguard Vision: Privacy & Security ===
+
+# Build
+bin/
+Release/
+Debug/
+*.exe
+*.dll
+
+# Arduino/Hardware
+*.hex
+*.ino.with_bootloader.hex
+
+# Configs & Logs
+settings.json
+/logs/
+/screenshots/
+*.log
+
+# VS/IDE
+.vs/
+.vscode/
+*.suo
