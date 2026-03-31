@@ -6,7 +6,6 @@ int main() {
     SetConsoleTitleA("Vanguard Vision Framework v2.8 [BETA]");
     std::cout << "--- Vanguard Vision Intelligence Suite 2026 ---" << std::endl;
     
-    // Инициализация захвата экрана высокого разрешения
     if (!Capture::Initialize()) {
         std::cout << "[ERROR] Failed to initialize Screen Capture Interface." << std::endl;
         return 1;
@@ -19,7 +18,6 @@ int main() {
     std::cout << "[*] Vision Engine started. Monitoring Enemy Outline Color: PURPLE" << std::endl;
 
     while (true) {
-        // Имитация процесса обработки кадров
         Capture::ProcessFrame();
         if (GetAsyncKeyState(VK_END)) break; 
         Sleep(1);
